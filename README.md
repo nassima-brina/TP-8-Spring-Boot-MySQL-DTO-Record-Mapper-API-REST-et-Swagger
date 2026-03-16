@@ -97,19 +97,35 @@ http://localhost:8085
 
 ## Aperçu de l'application
 
-[![Voir la vidéo](demo.png)](demo.mp4)
+#### Swagger UI : http://localhost:8085/swagger-ui/index.html
+
+![swaguer](demo.png)
+
 
 #### - Ajouter un étudiant via POST /api/students avec un JSON 
 
-#### - Modifier un étudiant via PUT /api/students/{id}
+![ POST /api/students]( POST.api.students.png)
+
 
 #### -Lister tous les étudiants avec GET /api/students
 
+![GET /api/students]( GET.api.students.png)
+
 #### - Rechercher par id avec GET /api/students/{id}
+
+![ GET /api/students/{id}]( GET.api.students.id)
+
+
+#### - Modifier un étudiant via PUT /api/students/{id}
+
+![PUT /api/students/{id}]( PUT.api.students.id.png)
+
 
 #### - Supprimer un étudiant avec DELETE /api/students/{id}
 
-#### Swagger UI : http://localhost:8085/swagger-ui/index.html
+![ DELETE /api/students/{id}]( DELETE.api.students.id.png)
+
+
 
 ## Conclusion
 
