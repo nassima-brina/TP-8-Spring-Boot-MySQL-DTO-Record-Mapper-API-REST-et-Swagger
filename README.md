@@ -96,6 +96,10 @@ http://localhost:8085
 #### Gestion centralisée des exceptions et renvoi de réponses claires avec statut HTTP approprié.
 
 ## Aperçu de l'application
+<video width="480" controls>
+  <source src="demo.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la vidéo.
+</video>
 
 #### - Ajouter un étudiant via POST /api/students avec un JSON 
 
