@@ -96,7 +96,9 @@ http://localhost:8085
 #### Gestion centralisée des exceptions et renvoi de réponses claires avec statut HTTP approprié.
 
 ## Aperçu de l'application
-[Voir la vidéo de démonstration](demo.mp4)
+
+[![Voir la vidéo](demo.png)](demo.mp4)
+
 #### - Ajouter un étudiant via POST /api/students avec un JSON 
 
 #### - Modifier un étudiant via PUT /api/students/{id}
