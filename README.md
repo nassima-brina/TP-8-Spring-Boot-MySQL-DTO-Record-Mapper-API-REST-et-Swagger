@@ -42,3 +42,74 @@ Développement JakartaEE : Spring
 
 ![Structure du projet](structure2.png)
 
+
+## Installation et lancement
+
+### - Cloner le projet :
+
+ git clone [https://github.com/TON_USERNAME/studentapi.git](https://github.com/nassima-brina/TP-8-Spring-Boot-MySQL-DTO-Record-Mapper-API-REST-et-Swagger/tree/main)
+#### - Entrer dans le dossier :
+cd studentapi
+#### - Lancer le projet avec Maven :
+mvn spring-boot:run
+- L'application démarre sur :
+http://localhost:8085
+
+## Composants créés
+#### Student.java :
+
+#### Entité JPA représentant un étudiant avec id, prénom, nom, email, filière et âge.
+
+### StudentRepository.java
+
+#### Repository Spring Data JPA pour accéder aux données en base.
+#### Méthodes automatiques : save, findAll, findById, delete, existsById.
+
+### StudentRequestDTO.java
+
+#### Record DTO pour les requêtes POST/PUT avec validation des champs.
+
+### StudentResponseDTO.java
+
+#### Record DTO pour les réponses API, contient l’id et toutes les informations de l’étudiant.
+
+### StudentMapper.java
+
+#### Mapper manuel entre l’entité Student et les DTO.
+#### Méthodes : toEntity, toResponseDTO, updateEntityFromDTO.
+
+### StudentService.java
+
+#### Service métier gérant la logique CRUD.
+#### Méthodes : addStudent, getAllStudents, getStudentById, updateStudent, deleteStudent.
+
+### StudentController.java
+
+#### Contrôleur REST exposant les endpoints :
+#### - POST /api/students
+#### - GET /api/students
+#### - GET /api/students/{id}
+#### - PUT /api/students/{id}
+#### - DELETE /api/students/{id}
+
+### ResourceNotFoundException.java & GlobalExceptionHandler.java
+#### Gestion centralisée des exceptions et renvoi de réponses claires avec statut HTTP approprié.
+
+## Aperçu de l'application
+
+#### - Ajouter un étudiant via POST /api/students avec un JSON 
+
+#### - Modifier un étudiant via PUT /api/students/{id}
+
+#### -Lister tous les étudiants avec GET /api/students
+
+#### - Rechercher par id avec GET /api/students/{id}
+
+#### - Supprimer un étudiant avec DELETE /api/students/{id}
+
+#### Swagger UI : http://localhost:8085/swagger-ui/index.html
+
+## Conclusion
+
+#### Ce TP a permis de créer une API REST complète avec Spring Boot et MySQL, structurée avec entités, DTO, mapper et service, avec validation, gestion des erreurs et documentation Swagger.
+#### L’application est fonctionnelle et prête à être consommée par un frontend ou une application mobile, suivant les bonnes pratiques backend.
