@@ -38,3 +38,7 @@ Développement JakartaEE : Spring
 
 ## 📁 Structure du projet
 
+![Structure du projet](structure1.png)
+
+![Structure du projet](structure2.png)
+
